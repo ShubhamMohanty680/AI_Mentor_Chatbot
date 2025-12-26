@@ -55,12 +55,14 @@ The system enforces **hard module boundaries** to ensure focused, distraction-fr
 ---
 
 ## 📂 Project Structure
+```
 ├── app.py                 # Module & experience selection UI
 ├── pages/
 │   └── mentor.py         # Mentor chatbot interface
 ├── .env                   # Hugging Face API token
 ├── requirements.txt
 └── README.md
+```
 
 ## 🚀 Use Cases
 
