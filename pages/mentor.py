@@ -204,9 +204,10 @@ conversation_text = ""
 for message in st.session_state["conv"]:
     conversation_text += f"{message['role'].capitalize()} : {message['content']}\n\n"
 
-st.download_button(
-    label="📥 Download Chat History",
-    data=conversation_text,
-    file_name="chat_history.txt",
-    mime="text/plain"
-)
+if conversation_text:
+    st.download_button(
+        label="📥 Download Chat History",
+        data=conversation_text,
+        file_name="chat_history.txt",
+        mime="text/plain"
+    )
